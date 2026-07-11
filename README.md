@@ -39,3 +39,19 @@ CloudCanvas will include:
 - Logging
 
 ## 📂 Project Structure
+
+## 🎯 Current Status
+
+🚧 Project initialization completed.
+
+Future development will include:
+
+- API development
+- Database integration
+- Cloud deployment
+- AI model integration
+- Monitoring dashboards
+
+## 👨‍💻 Author
+
+Simal Buttar
