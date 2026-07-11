@@ -1,0 +1,33 @@
+services:
+  api:
+    build: .
+
+    container_name: cloudcanvas-api
+
+    ports:
+      - "8000:8000"
+
+    depends_on:
+      - postgres
+
+    volumes:
+      - ./app:/app/app
+
+  postgres:
+    image: postgres:17
+
+    container_name: cloudcanvas-db
+
+    environment:
+      POSTGRES_USER: cloudcanvas
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: cloudcanvas
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
