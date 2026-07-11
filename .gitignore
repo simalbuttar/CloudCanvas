@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Database
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# Docker
+docker-data/
